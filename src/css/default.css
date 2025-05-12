@@ -1,0 +1,138 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a; /* Fondo oscuro */
+    font-size: 12px;
+    overflow: auto;
+}
+
+#mainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+#loveHeart {
+    float: left;
+    width: 670px;
+    height: 625px;
+    background-color: #6a3e9b; /* Color lila/morado para el corazón */
+    border-radius: 50%; /* Forma circular */
+}
+
+#garden {
+    width: 100%;
+    height: 100%;
+    background-color: #2c2c2c; /* Fondo gris oscuro para el jardín */
+}
+
+#elapseClock {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#words {
+    font-family: "sans-serif";
+    width: 500px;
+    font-size: 24px;
+    color: #f2f2f2; /* Letras claras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra sutil para resaltar el texto */
+}
+
+#messages {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff; /* Texto blanco */
+}
+
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 40px;
+    text-align: center;
+}
+
+#loveu {
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-right: 155px;
+    text-align: right;
+    display: none;
+    color: #f1c40f; /* Color dorado o amarillo brillante */
+}
+
+#loveu .signature {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#clickSound {
+    display: none;
+}
+
+#code {
+    float: left  ;
+    width: 440px;
+    height: 400px;
+    color: #f2f2f2; /* Letras claras para el código */
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 25px;
+}
+
+#code .string {
+    color: #2a36ff;
+}
+
+#code .keyword {
+    color: #7f0055;
+    font-weight: bold;
+}
+
+#code .placeholder {
+    margin-left: 15px;
+}
+
+#code .space {
+    margin-left: 7px;
+}
+
+#code .comments {
+    color: #3f7f5f;
+}
+
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    color: #f2f2f2; /* Letras claras para el copyright */
+}
+
+#errorMsg {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#copyright a {
+    color: #f2f2f2; /* Letras claras para los enlaces */
+}
+
+#icon {
+    font-size: 48px;
+    color: red;
+    margin: 50px;
+    align-content: center;
+}
+
+#heartspan {
+    align-content: center;
+    text-align: center;
+    margin: 20px;
+}
+

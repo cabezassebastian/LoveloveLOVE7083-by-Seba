@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Un año contigo, mi amor</title>
+
+  <style type="text/css">
+    @font-face {
+      font-family: digit;
+      src: url('digital-7_mono.ttf') format("truetype");
+    }
+  </style>
+  <link href="css/default.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/garden.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+
+<div id="mainDiv">
+  <div id="content">
+    <div id="code">
+      <span class="comments">/**</span><br />
+      <span class="space"/><span class="comments">* NUESTRO CÓDIGO DE AMOR</span><br />
+      <span class="space"/><span class="comments">*/</span><br />
+      Oña mi amor </3><br />
+      Recuerdas el 15 de mayo de 2024?<br />
+      <span class="comments">// Ese día empezó todo..</span><br />
+      Desde ese momento, todo cambió;<br />
+      <span class="comments">// Tus ojos, tu risa, tu voz.</span><br />
+      Te fuiste quedando en mi corazón;<br />
+      Pasaron los días, los meses;<br />
+      Nuestra conexión solo crecía;<br />
+      Juntos en lo bueno, y también en lo difícil;<br />
+      <span class="comments">// Y aquí seguimos, más fuertes que nunca.</span><br />
+      <br>
+      <br>
+      Solo quiero decirte:<br />
+      Te amo con todo mi ser.<br />
+      <br>
+      <br>
+      Si quieres ver nuestra constelacion, toca el corazón abajo 💞<br />
+      <br>
+      <span id="heartspan">
+        <a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+      </span>
+    </div>
+    <div id="loveHeart">
+      <canvas id="garden"></canvas>
+      <div id="words">
+        <div id="messages">
+          15 de mayo de 2024 – PARA SIEMPRE 💫
+          <div id="elapseClock"></div>
+        </div>
+        <div id="loveu">
+          TE AMO DEMASIADO<br/>
+          <div class="signature">-Seba</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var offsetX = $("#loveHeart").width() / 2;
+  var offsetY = $("#loveHeart").height() / 2 - 55;
+  var together = new Date();
+  together.setFullYear(2024, 4, 15); // mes 4 = mayo (los meses empiezan en 0)
+  together.setHours(0);
+  together.setMinutes(0);
+  together.setSeconds(0);
+  together.setMilliseconds(0);
+
+  if (!document.createElement('canvas').getContext) {
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "¡Tu navegador no soporta HTML5!<br/>Te recomiendo usar Chrome, Firefox o Edge"; 
+    document.body.appendChild(msg);
+    $("#code").css("display", "none")
+    document.execCommand("stop");
+  } else {
+    setTimeout(function () {
+      startHeartAnimation();
+    }, 5000);
+
+    timeElapse(together);
+    setInterval(function () {
+      timeElapse(together);
+    }, 500);
+
+    adjustCodePosition();
+    $("#code").typewriter();
+  }
+</script>
+</body>
+</html>
