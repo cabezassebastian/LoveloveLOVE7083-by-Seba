@@ -1,8 +1,9 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background: #1a1a1a; /* Fondo oscuro */
-    font-size: 12px;
+    background: linear-gradient(135deg, #f8e8dc, #f4c2c2); /* Soft pastel gradient */
+    font-size: 14px;
+    font-family: "Georgia", serif; /* Elegant vintage font */
     overflow: auto;
 }
 
@@ -15,14 +16,14 @@
     float: left;
     width: 670px;
     height: 625px;
-    background-color: #6a3e9b; /* Color lila/morado para el corazón */
-    border-radius: 50%; /* Forma circular */
+    background-color: #f4a7b9; /* Soft pink for the heart */
+    border-radius: 50%; /* Circular shape */
 }
 
 #garden {
     width: 100%;
     height: 100%;
-    background-color: #2c2c2c; /* Fondo gris oscuro para el jardín */
+    background-color: #f8e8dc; /* Light cream for the garden */
 }
 
 #elapseClock {
@@ -30,25 +31,26 @@
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #d4a373; /* Warm golden brown for elegance */
 }
 
 #words {
-    font-family: "sans-serif";
+    font-family: "Georgia", serif; /* Elegant serif font */
     width: 500px;
     font-size: 24px;
-    color: #f2f2f2; /* Letras claras */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra sutil para resaltar el texto */
+    color: #4a4a4a; /* Soft dark gray for text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
 }
 
 #messages {
     display: none;
     text-align: center;
     font-size: 30px;
-    color: #ffffff; /* Texto blanco */
+    color: #f4a7b9; /* Soft pink for romantic messages */
 }
 
 #elapseClock .digit {
-    font-family: "digit";
+    font-family: "Courier New", monospace; /* Vintage typewriter font */
     font-size: 40px;
     text-align: center;
 }
@@ -60,13 +62,14 @@
     margin-right: 155px;
     text-align: right;
     display: none;
-    color: #f1c40f; /* Color dorado o amarillo brillante */
+    color: #d4a373; /* Warm golden brown */
 }
 
 #loveu .signature {
     margin-top: 10px;
     font-size: 20px;
     font-style: italic;
+    color: #f4a7b9; /* Soft pink */
 }
 
 #clickSound {
@@ -74,20 +77,24 @@
 }
 
 #code {
-    float: left  ;
+    float: left;
     width: 440px;
-    height: 400px;
-    color: #f2f2f2; /* Letras claras para el código */
-    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 25px;
+    height: 700px;
+    margin-top: 50px; /* Adjusted to move the code section higher */
+    color: #4a4a4a; /* Soft dark gray for code */
+    font-family: "Courier New", "Monaco", monospace; /* Vintage typewriter font */
+    font-size: 20px;
+    background: #fffaf0; /* Light cream background for code */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 #code .string {
-    color: #2a36ff;
+    color: #d4a373; /* Warm golden brown for strings */
 }
 
 #code .keyword {
-    color: #7f0055;
+    color: #f4a7b9; /* Soft pink for keywords */
     font-weight: bold;
 }
 
@@ -100,14 +107,14 @@
 }
 
 #code .comments {
-    color: #3f7f5f;
+    color: #7f9c96; /* Soft green for comments */
 }
 
 #copyright {
     margin-top: 10px;
     text-align: center;
     width: 100%;
-    color: #f2f2f2; /* Letras claras para el copyright */
+    color: #4a4a4a; /* Soft dark gray */
 }
 
 #errorMsg {
@@ -117,15 +124,21 @@
     position: absolute;
     top: 100px;
     left: 0;
+    color: #e63946; /* Soft red for error messages */
 }
 
 #copyright a {
-    color: #f2f2f2; /* Letras claras para los enlaces */
+    color: #f4a7b9; /* Soft pink for links */
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
 }
 
 #icon {
     font-size: 48px;
-    color: red;
+    color: #e63946; /* Soft red for love */
     margin: 50px;
     align-content: center;
 }
@@ -134,5 +147,6 @@
     align-content: center;
     text-align: center;
     margin: 20px;
+    font-size: 24px;
+    color: #f4a7b9; /* Soft pink */
 }
-

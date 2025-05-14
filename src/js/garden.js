@@ -140,55 +140,62 @@
 	        }
 	    }
 
-	    Garden.options = {
-	        petalCount: {
-	            min: 8,
-	            max: 15
-	        },
-	        petalStretch: {
-	            min: 0.1,
-	            max: 3
-	        },
-	        growFactor: {
-	            min: 0.1,
-	            max: 1
-	        },
-	        bloomRadius: {
-	            min: 8,
-	            max: 10
-	        },
-	        density: 10,
-	        growSpeed: 1000 / 60,
-	        color: {
-				rmin: 128,
-				rmax: 255,
-				gmin: 0,
-				gmax: 128,
-				bmin: 0,
-				bmax: 128,
-	            opacity: 0.1
-	        },
-	        tanAngle: 60
-	    };
-	    Garden.random = function (min, max) {
-	        return Math.random() * (max - min) + min;
-	    };
-	    Garden.randomInt = function (min, max) {
-	        return Math.floor(Math.random() * (max - min + 1)) + min;
-	    };
-	    Garden.circle = 2 * Math.PI;
-	    Garden.degrad = function (angle) {
-	        return Garden.circle / 360 * angle;
-	    };
-	    Garden.raddeg = function (angle) {
-	        return angle / Garden.circle * 360;
-	    };
-	    Garden.rgba = function (r, g, b, a) {
-	        return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
-	    };
-		Garden.randomrgba = function (rmin, rmax, gmin, gmax, bmin, bmax, a) {
-			var r = Math.round(Garden.random(rmin, rmax));  // Rojo: 128-255
-			var g = Math.round(Garden.random(0, 100));      // Verde: 0-100 (bajo para mantener el tono morado)
-			var b = Math.round(Garden.random(150, 255));    // Azul: 150-255 (alto para el lila)
-			return Garden.rgba(r, g, b, a);  // Ajusta la opacidad si es necesario
-		};
+Garden.options = {
+    petalCount: {
+        min: 8,
+        max: 15
+    },
+    petalStretch: {
+        min: 0.1,
+        max: 3
+    },
+    growFactor: {
+        min: 0.1,
+        max: 1
+    },
+    bloomRadius: {
+        min: 8,
+        max: 10
+    },
+    density: 10,
+    growSpeed: 1000 / 60,
+    color: {
+        rmin: 150, // Deep red tones
+        rmax: 255, // Bright red and orange tones
+        gmin: 50,  // Muted greens for autumn hues
+        gmax: 100, // Soft orange tones
+        bmin: 30,  // Dark brown tones
+        bmax: 80,  // Reddish-brown tones
+        opacity: 0.9 // Higher opacity for a vibrant autumn look
+    },
+    tanAngle: 60
+};
+
+Garden.random = function (min, max) {
+    return Math.random() * (max - min) + min;
+};
+
+Garden.randomInt = function (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+Garden.circle = 2 * Math.PI;
+
+Garden.degrad = function (angle) {
+    return Garden.circle / 360 * angle;
+};
+
+Garden.raddeg = function (angle) {
+    return angle / Garden.circle * 360;
+};
+
+Garden.rgba = function (r, g, b, a) {
+    return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
+};
+
+Garden.randomrgba = function (rmin, rmax, gmin, gmax, bmin, bmax, a) {
+    var r = Math.round(Garden.random(rmin, rmax)); // Red tones
+    var g = Math.round(Garden.random(gmin, gmax)); // Green tones
+    var b = Math.round(Garden.random(bmin, bmax)); // Blue tones
+    return Garden.rgba(r, g, b, a); // Combine into an RGBA color
+};
